@@ -232,3 +232,5 @@ Software rendering examples do not rely on any specialized hardware or libraries
 - Some of the pipeline steps such as culling, clipping were skipped for simplicity and readability
 - Triangle rendering uses horizontal triangle splitting and filling is implemented using linear interpolation
 
+#   j a n a a a a a a a a a a a a a a a a a a a a a a a a  
+ 
