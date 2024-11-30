@@ -1,0 +1,51 @@
+# Blender v2.78 (sub 0) OBJ File: 'building_with_doors_windows.obj'
+# www.blender.org
+o Building
+v 0.5 -0.5 -0.5  # 1
+v 0.5 -0.5 0.5   # 2
+v -0.5 -0.5 0.5  # 3
+v -0.5 -0.5 -0.5 # 4
+v 0.5 0.5 -0.5  # 5
+v 0.5 0.5 0.5   # 6
+v -0.5 0.5 0.5  # 7
+v -0.5 0.5 -0.5 # 8
+v 0.2 -0.5 0.5  # 9 - Top of the door (front face opening)
+v -0.2 -0.5 0.5 # 10 - Bottom of the door (front face opening)
+v 0.2 -0.5 0.2  # 11 - Bottom part of the door (to create a rectangular door)
+v -0.2 -0.5 0.2 # 12 - Left side of the door (same as above)
+v 0.45 -0.1 0.5 # 13 - Right side of the window (front window)
+v -0.45 -0.1 0.5# 14 - Left side of the window (front window)
+v 0.45 -0.1 0.2 # 15 - Bottom part of the front window
+v -0.45 -0.1 0.2# 16 - Bottom part of the front window (same as above)
+v 0.45 -0.1 0.8 # 17 - Top right corner of the window (for the window opening)
+v -0.45 -0.1 0.8# 18 - Top left corner of the window (for the window opening)
+
+vt 1.0 0.0
+vt 0.0 0.0
+vt 0.0 1.0
+vt 1.0 1.0
+vn 0.0 -1.0 0.0
+vn 0.0 1.0 0.0
+vn 1.0 0.0 0.0
+vn -0.0 -0.0 1.0
+vn -1.0 -0.0 -0.0
+vn 0.0 0.0 -1.0
+s off
+
+# Walls
+f 1/1/1 2/2/1 3/3/1 4/4/1      # Bottom face
+f 5/1/2 8/2/2 7/3/2 6/4/2      # Top face
+f 1/1/3 5/2/3 6/3/3 2/4/3      # Front face with door opening
+f 2/1/4 6/2/4 7/3/4 3/4/4      # Right face
+f 3/1/5 7/2/5 8/3/5 4/4/5      # Back face
+f 5/1/6 1/2/6 4/3/6 8/4/6      # Left face
+
+# Door (Front face opening)
+f 9/1/1 10/2/1 11/3/1 12/4/1   # Front door (rectangular opening)
+
+# Front Window (Front window opening)
+f 13/1/1 14/2/1 15/3/1 16/4/1   # Front window (rectangle)
+f 15/1/1 16/2/1 17/3/1 18/4/1   # Front window (top part)
+
+# Left side window (left side opening)
+f 19/1/1 14/2/1 17/3/1 20/4/1   # Left window (rectangle)
